@@ -14,8 +14,10 @@ import javax.inject.Inject
 class SharedViewModel @Inject constructor(
     private val repository: ToDoRepository
 ) : ViewModel() {
+
     private val _allTasks = MutableLiveData<List<ToDoTask>>()
     val allTasks: LiveData<List<ToDoTask>> = _allTasks
+
     fun getAllTasks() {
         viewModelScope.launch {
             repository.getAllTasks.collect {

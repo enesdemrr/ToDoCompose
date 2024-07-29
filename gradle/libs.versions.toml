@@ -12,6 +12,7 @@ ksp = "2.0.0-1.0.23"
 room = "2.6.1"
 hilt = "2.49"
 dataStore = "1.1.1"
+nav_version = "2.7.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -39,6 +40,9 @@ hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.r
 
 # DataStore Preferences
 dataStore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "dataStore" }
+
+#Navigation
+navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "nav_version" }
 
 
 [plugins]
