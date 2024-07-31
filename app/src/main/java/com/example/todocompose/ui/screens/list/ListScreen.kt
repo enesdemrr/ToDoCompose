@@ -13,10 +13,10 @@ import com.example.todocompose.R
 
 @Composable
 fun ListScreen(
-    navigateToTaskScreen: (Int) -> Unit
+    navigateToTaskScreen: (taskId: Int) -> Unit
 ) {
     Scaffold(
-        topBar ={ ListAppBar() },
+        topBar = { ListAppBar() },
         content = {},
         floatingActionButton = {
             ListFab(onFabClicked = navigateToTaskScreen)
@@ -26,7 +26,7 @@ fun ListScreen(
 
 @Composable
 fun ListFab(
-    onFabClicked: (Int) -> Unit
+    onFabClicked: (taskId: Int) -> Unit
 ) {
     FloatingActionButton(
         onClick = {
